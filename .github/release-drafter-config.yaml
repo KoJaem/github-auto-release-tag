@@ -1,5 +1,7 @@
 name-template: 'v$RESOLVED_VERSION 🌈'
 tag-template: 'v$RESOLVED_VERSION'
+# publish: true # 릴리즈를 자동으로 게시
+commitish: main
 categories:
   - title: '🚀 Features'
     labels:
@@ -23,12 +25,11 @@ version-resolver:
       - 'major'
   minor:
     labels:
-      - 'minor'
+      - 'enhancement'
   patch:
     labels:
-      - 'patch'
+      - 'bug'
+      - 'chore'
   default: patch
 template: |
-  ## Changes
-
   $CHANGES
