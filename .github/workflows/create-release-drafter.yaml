@@ -11,6 +11,6 @@ jobs:
       - name: Release
         uses: release-drafter/release-drafter@v6
         with:
-          config-name: /workflows/release-drafter-config.yaml
+          config-name: release-drafter-config.yaml
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
