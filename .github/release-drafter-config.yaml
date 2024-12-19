@@ -15,10 +15,6 @@ categories:
 change-template: '- $TITLE ([#$NUMBER]($URL)) by @$AUTHOR'
 exclude-labels:
   - 'skip-release-tag'
-include-labels:
-  - 'bug'
-  - 'enhancement'
-  - 'chore'
 version-resolver:
   major:
     labels:
